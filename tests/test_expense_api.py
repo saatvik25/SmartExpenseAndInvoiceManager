@@ -11,6 +11,7 @@ def test_create_expense_success(client):
     }
     response = client.post("/expenses/", json=payload)
     
+    
     assert response.status_code == 201
     data = response.json()
     assert data["title"] == payload["title"]
