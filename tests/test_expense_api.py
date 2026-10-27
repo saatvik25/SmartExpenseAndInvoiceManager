@@ -1,6 +1,7 @@
 import pytest
 from datetime import date
 
+
 def test_create_expense_success(client):
     """Functional: Verify expense creation with valid data"""
     payload = {
