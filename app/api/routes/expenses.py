@@ -5,6 +5,7 @@ from app.api.deps import get_db
 from app.schemas.expense import ExpenseCreate, ExpenseResponse, ExpenseSummary
 from app.services.expense_service import ExpenseService
 
+
 router = APIRouter()
 @router.post("/", response_model=ExpenseResponse, status_code=201)
 def create_expense(
