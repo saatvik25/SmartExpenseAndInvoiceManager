@@ -9,7 +9,6 @@ from app.api.deps import get_db
 from app.core.database import Base
 
 
-
 # Use an in-memory SQLite database for testing to ensure total isolation
 SQLALCHEMY_DATABASE_URL = "sqlite://"
 
